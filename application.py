@@ -15,5 +15,12 @@ def index_page():
     # return render_template("index.html")
 
 
+@app.route("/application-form")
+def application_form():
+    """Show an application form."""
+
+    return render_template("application-form.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
