@@ -1,13 +1,16 @@
-<!doctype html>
-<html>
-<head>
-    <title>Skills-Web</title>
-    <link rel="stylesheet" href="/static/styles.css">
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title%}
+    Skills-Web
+{% endblock %}
+
 
 <!-- This page needs a form that can capture data about the user's
 first name, last name, job title, and salary requirements. -->
+    
+
+{% block body %}
+
     <h1>Career-Opportunities</h1>
 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -48,8 +51,8 @@ first name, last name, job title, and salary requirements. -->
             </label>
 
             <input type="submit" name="submit" value="Submit">
-            
+
         </form>
     </div>
-</body>
-</html>
+
+{% endblock %}
