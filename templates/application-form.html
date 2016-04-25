@@ -21,41 +21,34 @@ first name, last name, job title, and salary requirements. -->
     <h3>Interested in Applying?</h3>
 
     <div>
-        <form>
-          <label for="first-name">
-            First Name:
-              <input type="text" name="textfield">
-          </label>
-        </form>
-        
-        <form>
-          <label for="last-name">
-            Last Name:
-              <input type="text" name="textfield" id="last-name">
-          </label>
-        </form>
-        
-        <form>
-          <label for="salary-requirements">
-            Salary Requirements:
-              <input type="number" name="number">
-          </label>
-        </form>
-        
-        <form>
-          <label for="jobs">
-            Jobs:
-            <select name="select-jobs">
-              <option value="1">Select</option>
-              <option value="1">Software Engineer</option>
-              <option value="2">QA Engineer</option>
-              <option value="3">Product Manager</option>
-            </select>
-          </label>
-        </form>
-        
         <form action="/application" method="POST">
+            <label for="first-name">
+                First Name:
+                <input type="text" name="first-name">
+            </label>
+
+            <label for="last-name">
+                Last Name:
+                <input type="text" name="last-name" id="last-name">
+            </label>
+  
+            <label for="salary-requirements">
+                Salary Requirements:
+                <input type="number" name="salary">
+            </label>
+
+            <label for="job-titles">
+                Jobs:
+                <select name="job-titles">
+                    <option value="Select">Select</option>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="QA Engineer">QA Engineer</option>
+                    <option value="Product Manager">Product Manager</option>
+                </select>
+            </label>
+
             <input type="submit" name="submit" value="Submit">
+            
         </form>
     </div>
 </body>
