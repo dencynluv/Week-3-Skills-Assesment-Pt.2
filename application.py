@@ -32,6 +32,7 @@ def show_applicant_info():
     job_title = request.form.get("job-titles")
 
     return render_template("application-response.html", fname=first_name, lname=last_name, salary=salary, job_title=job_title)
+    # keep variable names = to the same name between python and jinja
 
 
 if __name__ == "__main__":

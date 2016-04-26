@@ -27,7 +27,7 @@ first name, last name, job title, and salary requirements. -->
         <form action="/application" method="POST">
             <label for="first-name">
                 First Name:
-                <input type="text" name="first-name">
+                <input type="text" name="first-name" id="first-name">
             </label>
 
             <label for="last-name">
@@ -37,20 +37,24 @@ first name, last name, job title, and salary requirements. -->
   
             <label for="salary-requirements">
                 Salary Requirements:
-                <input type="number" name="salary">
+                <input type="number" name="salary" id="last-name">
             </label>
 
             <label for="job-titles">
                 Jobs:
-                <select name="job-titles">
-                    <option value="Select">Select</option>
+                <select name="job-titles" id="job-titles">
                     <option value="Software Engineer">Software Engineer</option>
                     <option value="QA Engineer">QA Engineer</option>
                     <option value="Product Manager">Product Manager</option>
                 </select>
             </label>
 
-            <input type="submit" name="submit" value="Submit">
+            <input type="submit"> 
+            <!-- name="submit" value="Submit" ARE OPTIONAL 
+            name is not needed at all
+            value is if you want to change what the button says -->
+
+            <!-- think of submit button as one form submission -->
 
         </form>
     </div>
